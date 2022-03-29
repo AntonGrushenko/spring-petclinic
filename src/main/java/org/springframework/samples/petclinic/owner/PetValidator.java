@@ -48,9 +48,11 @@ public class PetValidator implements Validator {
 		}
 
 		// birth date validation
-		if (pet.getBirthDate() == null) {
-			errors.rejectValue("birthDate", REQUIRED, REQUIRED);
-		}
+		//Start the server in its initial state and change the application to make it so that one can add pets without birthdays. 
+		//Use JRebel to avoid restarting the server.
+		//if (pet.getBirthDate() == null) {
+		//	errors.rejectValue("birthDate", REQUIRED, REQUIRED);
+		//}
 	}
 
 	/**
